@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Receitas simples e econômicas da NutriFácil.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - NutriFácil</title>
+    <link rel="stylesheet" href="indexpag1.html">
+</head>
+<style>
+
+body {
+    margin: 0;
+    color: black;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: rgb(11, 180, 47);
+    text-decoration: none;
+}
+
+header {
+    padding: 25px 8%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.introducao {
+    padding: 35px 8%;
+    background-color: #eff9ef;
+}
+
+.introducao h1 {
+    color: rgb(11, 180, 47);
+}
+
+.receitas {
+    padding: 30px 8%;
+}
+
+.lista-receitas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.receita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: green;   
+    padding: 20px;
+    border: 1px solid rgb(11, 230, 47);
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+footer{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer a{
+    color: #32eb51;
+    text-decoration: none;
+}
+
+/* Versão mobile */
+@media (max-width: 600px) {
+
+.menu {
+    flex-direction: column;
+    gap: 15px;
+    }
+
+.menu-links {
+    flex-direction: column;
+    align-items: center;
+    }
+
+.introducao {
+    text-align: center;
+    }
+
+.lista-receitas {
+    flex-direction: column;
+    align-items: center;
+    }
+
+.receita {
+    width: 100%;
+    }
+
+.receita img {
+    width: 100%;
+    }
+
+form {
+    padding: 15px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+footer {
+    padding: 15px;
+    }
+}
+
+</style>
+
+<body>
+    <header>
+    <nav class="menu">
+    <a class="logo" href="indexpag1.html">NutriFácil</a>
+    <div class="menu-links">
+    <a href="indexpag1.html">Início</a>
+    <a href="indexpag2.html">Receitas</a>
+    </div>
+    </nav>
+    </header>
+
+    <main>
+    <section class="introducao">
+    <h1>Receitas fáceis para o dia a dia</h1>
+    <p>Ideias gostosas e econômicas para preparar em casa.</p>
+    </section>
+
+
+
+    <form>
+    <label for="Receitas">Adicionar Ingredientes:</label>
+    <input type="text" id="Receitas" required>
+
+    <hr>
+
+    <input type="submit" value="Procurar Ingredientes">
+
+    <section class="receitas">
+    <h2>Receitas encontradas</h2>
+
+    <div class="lista-receitas">
+
+    <div class="receita">
+
+        <img src="https://i0.wp.com/porkworld.com.br/wp-content/uploads/2026/09/receita-de-macarrao-cremoso-fotografia-imagem.jpg?fit=1920%2C1080&ssl=1" alt="Macarrão cremoso" width="450"> 
+    <h3>Macarrão cremoso</h3>
+    <p>Uma refeição simples e rápida.</p>
+    <p>Preparo: 20 minutos</p>
+    </div>
+
+    <div class="receita">
+        <img src="https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/667bb55cfac896373903bbde0e47bf29.jpg?itok=ySMXM8CY" alt="Arroz com legumes" width="450">
+    <h3>Arroz com legumes</h3>
+    <p>Uma forma prática de aproveitar os ingredientes.</p>
+    <p>Preparo: 25 minutos</p>
+    </div>
+
+    <div class="receita">
+        <img src="https://images.cooknenjoy.com/uploads/2021/12/Salada-Grao-de-Bico-01-1920x1442.jpg" alt="Salada de grão-de-bico" width="450">
+    <h3>Salada de grão-de-bico</h3>
+    <p>Uma refeição leve e sem carne.</p>
+    <p>Preparo: 15 minutos</p>
+    </div>
+
+     <div class="receita">
+       
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNyW5lep4OBIHuxmsr-UhGPp4g9_uRlokmnacWALWkiA&s=10" alt="Ovo mexido" width="450"> 
+    <h3>Ovo mexido</h3>
+    <p>Uma refeição simples e rápida.</p>
+    <p>Preparo: 8 minutos</p>
+    </div>
+
+     <div class="receita">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6YGcIAkndJRTDNleKl6iUOviVDUwDktd5kuZpgEi-3w&s=10" alt="Bolo de cenoura" width="350">
+    <h3>Bolo de cenoura</h3>
+    <p>Uma refeição leve e sem carne.</p>
+    <p>Preparo: 30 minutos</p>
+    </div>
+
+     <div class="receita">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNJye9UIW957sMcQOgxXPEh9CTgqeLceObdjdGBfcWDg&s=10" alt="Aipim" width="350">
+    <h3>Aipim</h3>
+    <p>Uma refeição leve e sem carne.</p>
+    <p>Preparo: 15 minutos</p>
+    </div>
+    </div>
+
+    </section>
+    </main>
+
+    <input type="submit" value="Carregar mais receitas">
+    
+
+    <footer>
+     <p>© 2026 - NutriFácil. Todos os direitos reservados.</p>
+    <nav>
+    <ul>
+        <li><a href="#">Instagram da empresa</a></li>
+        <li><a href="#">Facebook da empresa</a></li>
+    </ul>
+    </nav>
+    <address>
+        nutrifacil@gmail.com <br>
+        Telefone: (77) 99999-0000
+    </address>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Xand">
+<meta name="keywords" content="projeto figma">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omelete - NutriFácil</title>
+
+<style>
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    color: rgb(11, 180, 47);
+    text-decoration: none;
+}
+
+header{
+    padding: 25px 8%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.menu{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-links{
+    display: flex;
+    gap: 20px;
+}
+
+.caminho{
+    padding: 20px 8% 0 8%;
+    font-size: 14px;
+}
+
+.introducao{
+    padding: 20px 8% 35px 8%;
+}
+
+.aviso{
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #eff9ef;
+    color: green;
+    font-size: 14px;
+}
+.aviso{
+    border-radius: 8px;
+}
+
+.informacoes{
+    display: flex;
+    gap: 20px;
+}
+
+.conteudo{
+    display: flex;
+    gap: 20px;
+    padding: 0 8% 30px 8%;
+}
+
+.coluna{
+    flex: 1;
+}
+
+.coluna img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.caixa{
+    padding: 20px;
+    border: 1px solid rgb(11, 230, 47);
+    border-radius: 8px;
+}
+
+.caixa h2{
+    color: green;
+    margin-top: 0;
+}
+
+.caixa p{
+    margin: 0 0 12px 0;
+}
+
+.tenho{
+    color: green;
+    font-size: 13px;
+}
+
+footer{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer a{
+    color: #32eb51;
+}
+
+@media (max-width: 600px){
+    .conteudo{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .informacoes{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="menu">
+    <a class="logo" href="indexpag1.html">NutriFácil</a>
+    <div class="menu-links">
+        <a href="indexpag1.html">Início</a>
+        <a href="indexpag2.html">Receitas</a>
+    </div>
+</nav>
+</header>
+
+<main>
+<p class="caminho">
+<a>Início</a> >
+<a>Receitas</a> >
+Omelete de Tomate e Queijo Rápido
+
+<section class="introducao">
+<p class="aviso">Você tem 60% dos ingredientes principais para esta receita!</p>
+
+<h1 style="color: rgb(11, 180, 47);">Omelete de Tomate e Queijo Rápido</h1>
+
+<div class="informacoes">
+<p>Tempo: 15 min</p>
+<p>Dificuldade: Fácil</p>
+<p>Rendimento: 1 porção</p>
+</div>
+
+<button>Salvar nos Favoritos</button>
+</section>
+
+<section class="conteudo">
+<div class="coluna">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMFbzsVgD-zCLxtyPpuR8kjcdx8f95LpD9zkjLLPKZw&s=10" alt="omelete">
+
+<div class="caixa">
+<h2>Ingredientes Necessários</h2>
+
+<p><input type="checkbox" checked> 3 ovos frescos (você tem)
+<p><input type="checkbox" checked> 2 tomates cortados em cubos (você tem)
+<p><input type="checkbox" checked> 100g de queijo mussarela ralado (você tem)
+<p><input type="checkbox"> 1 colher de sopa de manteiga ou azeite
+<p><input type="checkbox"> Sal, pimenta e cheiro-verde a gosto
+</div>
+</div>
+
+<div class="coluna">
+<div class="caixa">
+<h2>Modo de Preparo</h2>
+
+<p>1. Em uma tigela, bata bem os ovos com uma pitada de sal e uma pitada de pimenta até ficarem homogêneos.
+<p>2. Aqueça uma frigideira antiaderente em fogo médio e derreta a manteiga (ou aqueça o azeite).
+<p>3. Despeje os ovos batidos e espalhe bem por todo o fundo da frigideira.
+<p>4. Quando a omelete começar a firmar, distribua os tomates picados e o queijo mussarela ralado por cima.
+<p>5. Dobre a omelete ao meio com a ajuda de uma espátula e deixe mais um minuto para o queijo derreter completamente.
+<p>6. Retire do fogo, finalize com cheiro-verde picado e sirva em seguida.
+</div>
+</div>
+</section>
+</main>
+
+<input type="submit" value="Carregar mais receitas">
+
+<footer>
+<p>© 2026 - NutriFácil. Todos os direitos reservados.</p>
+<nav>
+<ul>
+    <li><a href="#">Instagram da empresa</a></li>
+    <li><a href="#">Facebook da empresa</a></li>
+</ul>
+</nav>
+<address>
+    nutrifacil@gmail.com <br>
+    Telefone: (77) 99999-0000
+</address>
+
+</footer>
+</body>
+</html>

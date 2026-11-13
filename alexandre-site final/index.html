@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Xand">
+<meta name="keywords" content="projeto figma">
+<meta name="description" content="página inicial do figma">
+<title>NutriFácil</title>
+
+<style>
+     .container{
+            /* organizar a tela em linhas ou colunas */
+            display:flex;
+            /*organizar os itens na tela*/
+            justify-content:center;
+            /*direção - coluna ou linha*/
+            flex-direction:row;
+            /*altura*/
+            height: 200px;
+            /*alimnhamento de altura*/
+            align-items: center;
+            /*distanciamento*/
+            gap:80px;
+        }
+
+        .card{
+            background-color: rgb(142, 245, 147);
+            color: black;
+            padding: 30px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+            flex:1;
+        }
+    .titulo{
+        color: black;
+        text-align: left;
+        justify-content:left;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    #subtitulo{
+        color: black;
+        
+    }
+
+body{
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    padding: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.menu a{
+    color: rgb(11, 180, 47);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-links{
+    display: flex;
+    gap: 20px;
+}
+
+header img{
+    width: 300px;
+}
+
+blockquote{
+    font-style: italic;
+    color: black;
+    margin-top: 30px;
+     text-align: left;
+}
+
+main{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+h1, h2, h3{
+    color: rgb(2, 2, 2);
+}
+
+table{
+    width: 100%;
+    margin: 50px;
+}
+
+table, th, td{
+    border: 1px solid rgb(11, 230, 47);
+}
+
+th{
+    background-color: green;
+    padding: 10px;
+}
+
+tr:hover{
+    background-color: rgb(11, 230, 47);
+}
+
+form{
+    margin: 20px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 100px;
+}
+
+
+input[type="submit"]{
+    width: auto;
+    background-color: rgb(81, 238, 41);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+ol{
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+footer{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer a{
+    color: #32eb51;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.prato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 450px;
+    border: 1px solid rgb(11, 230, 47);
+    border-radius: 8px;
+}
+
+.prato img {
+    width: 100%;
+    height: auto;
+}
+
+.entrada{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: right;
+    gap: 100px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.busca{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* responsividade pro mobile */
+@media (max-width: 600px) {
+
+.menu {
+    flex-direction: column;
+    gap: 15px;
+    }
+
+.menu-links {
+    flex-direction: column;
+    align-items: center;
+    }
+
+.entrada {
+    flex-direction: column;
+    gap: 20px;
+    }
+
+.texto {
+    width: 100%;
+    }
+
+.busca {
+    width: 100%;
+    }
+
+.container {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    }
+
+.card {
+    width: 80%;
+    }
+
+.prato {
+    width: 100%;
+    }
+
+.prato img {
+    width: 100%;
+    }
+
+main {
+    width: 90%;
+    }
+
+table {
+    width: 100%;
+    margin: 10px 0;
+    }
+
+ header img {
+    width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav class="menu">
+        <a class="logo" href="indexpag2.html">NutriFácil</a>
+        <div class="menu-links">
+            <a href="indexpag1.html">Início</a>
+            <a href="indexpag2.html">Receitas</a>
+        </div>
+    </nav>
+   <br>
+    <hr>
+   <br>
+   <br>
+   
+   <div class="entrada">
+        <div class="texto"> 
+            <div><h3><strong>NutriFácil</strong> é um site para ajudar as pessoas a fazerem
+        <i>receitas</i> com os ingredientes que elas já possuem em 
+        <u>casa</u>.</h3></div>
+    
+        <div>Transformando ingredientes em pratos especiais. Descubra receitas deliciosas baseadas nos ingredientes da sua despensa. Economize dinheiro, evite o desperdício de alimentos e prepare refeições incríveis em poucos minutos.</div>
+       
+    
+<div class="busca">
+<div>   
+<form>
+    <label for="busca">Buscar:</label>
+    <input type="text" id="busca" required>
+    <input type="submit" value="Procurar">
+</div> 
+</form>
+
+</div></div>
+        <div class="titulo">
+        <img src="https://th.bing.com/th/id/OIP.S3Jsv3Jn8HGxWU8QKXaSKgHaER?w=320&h=183&c=7&r=0&o=7&pid=1.7&rm=3"
+         alt="Imagem meramente ilustrativa">
+    </div>
+</div>
+
+    <blockquote align="left">
+        
+       
+    </blockquote>
+</header>
+
+<main>
+<section>
+   
+   <br> <hr>
+    <h2 align="center" id="subtitulo">Como funciona a NutriFácil</h2>
+
+    <h4 align="center"><p> 
+      Você coloca os ingredientes disponíveis para uso e te damos algumas opções de receitas possíveis.
+    </p></h4>
+</section>
+
+<section>
+    <h3>Nossos Serviços</h3>
+
+    <p>
+        Trabalhamos com <strong>qualidade</strong>,
+        <i>sabor</i> e as <u>melhores receitas que podem ser feitas</u>.
+    </p>
+</section>
+
+<ul type="square">
+    <li>Planejamento</li>
+    <li>Comidas deliciosas</li>
+    <li>Suporte para iniciantes na cozinha</li>
+</ul>
+ 
+      <ol type="number">  <div class="container">
+        <div class="card">
+        <p><li>Encontre receitas:</p>As melhores receitas em um só lugar</li></div>
+        <div class="card">
+        <li><p>Selecione ingredientes:</p>Selecione o que você já possui</div></li>
+        <div class="card">
+        <li><p>Cozinhe e aproveite:</p>Siga o passo a passo e economize tempo</div></li>
+    </div></ol>
+    
+<section>
+   
+   <br> <hr>
+    <h2 align="left" id="subtitulo">Receitas em destaque</h2>
+
+    <h4 align="left"><p> 
+      As receitas mais amadas e preparadas de hoje pelos nossos usuários.
+    </p></h4>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  <div class="container">
+    <div class="prato"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWXGG_hW8_1pGzTmYdIYlKwZxxKoAhsMPJhlQqBa7BdMj47kXdDMtMp-X-&s=10">
+    <p>Omelete</p>
+    <p>15min / fácil</p></div>
+    <div class="prato"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQPdrVXPvY5auThxETvsJV613Sr3yl9teIwCzDrc3hQg&s=10">
+    <P>Macarronada</P>
+    <p>20min / fácil</p></div>
+    <div class="prato"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5LjnVPuHH596IcZREUQg_daOvejXG7TBC67N_s-jK1w&s=10">
+    <p>Arroz de forno</p>
+    <p>30min / fácil</p></div>
+    </div>
+</section>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+<h2 align="center">Por quê usar o NutriFácil?</h2>
+
+ <h4 align="center"><p> 
+      Criado sob medida para simplificar sua vida financeira e culinária.
+    </p></h4>
+
+  <ul type="square">  <div class="container">
+        <div class="card"><p><li>Economize dinheiro:</p>Aproveite ao máximo tudo o que você já comprou, sem precisar pedir delivery</li></div>
+        <div class="card"><li><p>Reduza o Desperdício:</p>Diga adeus àquele tomate esquecido na gaveta da geladeira</div></li>
+        <div class="card"><li><p>Receitas Rápidas:</p>Pratos práticos pensados para quem tem a rotina corrida de estudos ou trabalho</div></li>
+    </div></ul>
+   
+    <hr>
+
+<table>
+    <thead>
+        <tr>
+            <th>Vantagens</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Desenvolvimento Culinário</td>
+            <td>Criação de pratos e uso de ingredientes</td>
+        </tr>
+
+        <tr>
+            <td>Suporte</td>
+            <td>Manutenção e assistência para saber como usar itens</td>
+        </tr>
+
+        <tr>
+            <td>Economize dinheiro</td>
+            <td>Aproveite ao máximo o que você tem sem precisar pedir delivery</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Cadastro de Visitantes</h2>
+
+<form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+
+    <hr>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" required>
+
+    <hr>
+
+    <input type="submit" value="Enviar Cadastro">
+</form>
+
+</main>
+
+<footer>
+    <p>© 2026 - NutriFácil. Todos os direitos reservados.</p>
+    <p>Transformando ingredientes esquecidos na sua geladeira em refeições saudáveis, baratas e deliciosas.</p>
+    <nav>
+    <ul>
+        <li><a href="#">Instagram da empresa</a></li>
+        <li><a href="#">Facebook da empresa</a></li>
+    </ul>
+    </nav>
+    <address>
+        nutrifacil@gmail.com <br>
+        Telefone: (77) 99999-0000
+    </address>
+
+    
+</footer>
+
+</body>
+</html>
